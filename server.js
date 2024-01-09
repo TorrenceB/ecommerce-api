@@ -5,6 +5,8 @@ const app = express();
 const port = 80;
 
 app.get("/", (req, res) => {
+  const __dirname = path.resolve();
+
   res.send(path.join(__dirname, "index.html"));
 });
 
