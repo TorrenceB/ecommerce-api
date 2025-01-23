@@ -1,0 +1,5 @@
+# Database Certificate
+./certificates/db-connection.pem
+
+# .env
+.env
