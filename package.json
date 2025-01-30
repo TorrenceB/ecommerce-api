@@ -1,9 +1,9 @@
 {
-	"name": "ai-image-engine",
+	"name": "mh-api",
 	"version": "1.0.0",
-	"main": "app.js",
+	"main": "index.ts",
 	"scripts": {
-		"start": "npx tsx index.ts",
+		"dev": "npx tsx index.ts",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
