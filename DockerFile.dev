@@ -4,7 +4,7 @@ RUN apk add --no-cache git
 
 RUN git clone https://github.com/TorrenceB/mental-health-api.git /app/api
 
-WORKDIR /app
+WORKDIR /app/api
 
 RUN npm install
 
