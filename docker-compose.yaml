@@ -1,0 +1,13 @@
+services:
+ api-dev:
+  container_name: dev
+  image: mcr.microsoft.com/devcontainers/typescript-node
+  volumes:
+   - ..:/workspace:cached
+  ports:
+   - "3030:3030"
+  environment:
+   - NODE_ENV=development
+   - CORS_ORIGIN=http://localhost:3000
+  restart: always
+  command: npm run dev
