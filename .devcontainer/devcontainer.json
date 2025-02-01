@@ -1,8 +1,8 @@
 {
-	"name": "dev",
+	"name": "API Development Container",
 	"dockerComposeFile": "../docker-compose.yaml",
-	"service": "dev",
-	"workspaceFolder": "/workspace",
+	"service": "api-dev",
+	"workspaceFolder": "/app",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -13,6 +13,5 @@
 		}
 	},
 	"forwardPorts": [3030],
-	"postCreateCommand": "npm install",
-	"remoteUser": "node"
+	"postCreateCommand": "npm install"
 }
