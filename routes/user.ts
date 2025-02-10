@@ -1,11 +1,13 @@
 import express from 'express';
-import db from '../plugins/database'
+
+import { getUser } from '../services/user'
 
 const router = express.Router();
 
-router.get('/user/:id', (req, res, next) => {
-    console.log('[user id:]', req.params.id)
-    console.log('[db]:', db)
+router.get('/user/:id', async (req, res, next) => {
+    const user = await getUser(req.params.id)
+
+    res.json(user)
 })
 
 export default router;
